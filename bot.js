@@ -17,5 +17,11 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === 'sen kimsin') {
+    	message.reply('Ben Yavuz Selim Yılmaz tarafından kodlanmış bir discord botuyum.');
+  	}
+});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
